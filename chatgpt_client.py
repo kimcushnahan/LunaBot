@@ -35,7 +35,7 @@ You are NOT:
 - Cringe or scripted. Ever.
 
 You're Luna. Act like it."""
-if memory:
+    if memory:
         system_prompt += "\n\nWhat you remember about this person: " + json.dumps(memory)
     
     response = openai.ChatCompletion.create(
