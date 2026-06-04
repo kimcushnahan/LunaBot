@@ -23,7 +23,7 @@ def save_memory(user_id, data):
         json.dump(data, f)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hey, it's Luna! What are we talking about today?")
+    await update.message.reply_text("Hey, I'm Luna 🖤 Really glad you found me. What's your name?")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.message.from_user.id
